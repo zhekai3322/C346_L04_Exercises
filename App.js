@@ -94,84 +94,30 @@
 // export default App;
 
 // Ex 3A
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-
-const App = () => {
-    return (
-        <View style={styles.Parent}>
-            {/*Ex 3C*/}
-            {/*<View style={[styles.Child, { backgroundColor: 'powderblue', maxWidth: 90}]}>*/}
-            {/*Ex 3D*/}
-            {/*<View style={[styles.Child, { backgroundColor: 'powderblue', flex: 1 }]}>*/}
-            <View style={[styles.Child, { backgroundColor: 'powderblue' }]}>
-                <Text style={styles.ChildText}>Child One</Text>
-            </View>
-            {/*Ex 3D*/}
-            {/*<View style={[styles.Child, { backgroundColor: 'skyblue', flex: 2 }]}>*/}
-            <View style={[styles.Child, { backgroundColor: 'skyblue' }]}>
-                <Text style={styles.ChildText}>Child Two</Text>
-            </View>
-            {/*Ex 3C*/}
-            {/*<View style={[styles.Child, { backgroundColor: 'steelblue', maxHeight: 120 }]}>*/}
-            {/*Ex 3D*/}
-            {/*<View style={[styles.Child, { backgroundColor: 'steelblue', flex: 3 }]}>*/}
-            <View style={[styles.Child, { backgroundColor: 'steelblue' }]}>
-                <Text style={styles.ChildText}>Child Three</Text>
-            </View>
-        </View>
-    );
-};
-
-const styles = StyleSheet.create({
-    Parent: {
-        flexDirection: 'column',
-        backgroundColor: '#F5fcff',
-        borderColor: '#0099AA',
-        borderWidth: 5,
-        // Ex 3D
-        flex: 1,
-
-        // Ex 3E
-        // justifyContent: 'flex-start', // Align children at the start
-        // justifyContent: 'flex-end', // Align children at the end
-        // justifyContent: 'center', // Center children in the container
-        // justifyContent: 'space-between', // Evenly space children with no space at edges
-        // justifyContent: 'space-around', // Evenly space children with space around edges
-        // justifyContent: 'space-evenly', // Evenly distribute children with equal spacing around them
-    },
-    Child: {
-        borderWidth: 2,
-        alignItems: 'center', // Center text horizontally
-        justifyContent: 'top', // Center text vertically
-        // Ex 3E
-        // flex: 1, // Allow children to grow equally
-        marginHorizontal: 3, // Space between children
-    },
-    ChildText: {
-        textAlign: 'center',
-        fontSize: 24,
-        color: 'black',
-    },
-});
-
-export default App;
-
-// //Ex 4
 // import React from 'react';
 // import { View, Text, StyleSheet } from 'react-native';
 //
 // const App = () => {
 //     return (
 //         <View style={styles.Parent}>
-//             <View style={[styles.Child, { backgroundColor: 'lightblue' }]}>
-//                 <Text style={styles.ChildText}>Square 1</Text>
+//             {/*Ex 3C*/}
+//             {/*<View style={[styles.Child, { backgroundColor: 'powderblue', maxWidth: 90}]}>*/}
+//             {/*Ex 3D*/}
+//             {/*<View style={[styles.Child, { backgroundColor: 'powderblue', flex: 1 }]}>*/}
+//             <View style={[styles.Child, { backgroundColor: 'powderblue' }]}>
+//                 <Text style={styles.ChildText}>Child One</Text>
 //             </View>
-//             <View style={[styles.Child, { backgroundColor: 'green' }]}>
-//                 <Text style={styles.ChildText}>Square 2</Text>
+//             {/*Ex 3D*/}
+//             {/*<View style={[styles.Child, { backgroundColor: 'skyblue', flex: 2 }]}>*/}
+//             <View style={[styles.Child, { backgroundColor: 'skyblue' }]}>
+//                 <Text style={styles.ChildText}>Child Two</Text>
 //             </View>
-//             <View style={[styles.Child, { backgroundColor: 'red' }]}>
-//                 <Text style={styles.ChildText}>Square 3</Text>
+//             {/*Ex 3C*/}
+//             {/*<View style={[styles.Child, { backgroundColor: 'steelblue', maxHeight: 120 }]}>*/}
+//             {/*Ex 3D*/}
+//             {/*<View style={[styles.Child, { backgroundColor: 'steelblue', flex: 3 }]}>*/}
+//             <View style={[styles.Child, { backgroundColor: 'steelblue' }]}>
+//                 <Text style={styles.ChildText}>Child Three</Text>
 //             </View>
 //         </View>
 //     );
@@ -179,25 +125,79 @@ export default App;
 //
 // const styles = StyleSheet.create({
 //     Parent: {
-//         flexDirection: 'row',
-//         backgroundColor: 'whitesmoke',
-//         marginTop: 30,
-//         flex: 1, // Allow Parent to take full height of the screen
-//         justifyContent: 'center', // Center children vertically
-//         alignItems: 'center', // Center children horizontally
+//         flexDirection: 'column',
+//         backgroundColor: '#F5fcff',
+//         borderColor: '#0099AA',
+//         borderWidth: 5,
+//         // Ex 3D
+//         flex: 1,
+//
+//         // Ex 3E
+//         // justifyContent: 'flex-start', // Align children at the start
+//         // justifyContent: 'flex-end', // Align children at the end
+//         // justifyContent: 'center', // Center children in the container
+//         // justifyContent: 'space-between', // Evenly space children with no space at edges
+//         // justifyContent: 'space-around', // Evenly space children with space around edges
+//         // justifyContent: 'space-evenly', // Evenly distribute children with equal spacing around them
 //     },
 //     Child: {
-//         width: 80,
-//         height: 80,
-//         backgroundColor: 'lightblue', // Optional: give a color to visualize the squares
-//         margin: 10, // Optional: space between squares
-//         justifyContent: 'center', // Center text vertically
+//         borderWidth: 2,
 //         alignItems: 'center', // Center text horizontally
+//         justifyContent: 'top', // Center text vertically
+//         // Ex 3E
+//         // flex: 1, // Allow children to grow equally
+//         marginHorizontal: 3, // Space between children
 //     },
 //     ChildText: {
-//         color: 'black', // Change text color for better visibility
+//         textAlign: 'center',
+//         fontSize: 24,
+//         color: 'black',
 //     },
 // });
 //
 // export default App;
+
+// //Ex 4
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+const App = () => {
+    return (
+        <View style={styles.Parent}>
+            <View style={[styles.Child, { backgroundColor: 'lightblue' }]}>
+                <Text style={styles.ChildText}>Square 1</Text>
+            </View>
+            <View style={[styles.Child, { backgroundColor: 'lightgreen' }]}>
+                <Text style={styles.ChildText}>Square 2</Text>
+            </View>
+            <View style={[styles.Child, { backgroundColor: 'red' }]}>
+                <Text style={styles.ChildText}>Square 3</Text>
+            </View>
+        </View>
+    );
+};
+
+const styles = StyleSheet.create({
+    Parent: {
+        flexDirection: 'row',
+        backgroundColor: 'whitesmoke',
+        marginTop: 30,
+        flex: 1, // Allow Parent to take full height of the screen
+        justifyContent: 'center', // Center children vertically
+        alignItems: 'center', // Center children horizontally
+    },
+    Child: {
+        width: 80,
+        height: 80,
+        backgroundColor: 'lightblue', // Optional: give a color to visualize the squares
+        margin: 10, // Optional: space between squares
+        justifyContent: 'center', // Center text vertically
+        alignItems: 'center', // Center text horizontally
+    },
+    ChildText: {
+        color: 'black', // Change text color for better visibility
+    },
+});
+
+export default App;
 
